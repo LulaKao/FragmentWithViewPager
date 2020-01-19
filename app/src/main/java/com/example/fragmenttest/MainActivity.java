@@ -14,7 +14,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     private ViewPagerAdapter viewPagerAdapter;
-    private ViewPager viewPager;
+    private static ViewPager viewPager;
     private MenuItem menuItem;
     private Intent intent;
 
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    public void setViewPager(int fragmentNumber){
+    public static void setViewPager(int fragmentNumber){
         viewPager.setCurrentItem(fragmentNumber);
     }
 }
